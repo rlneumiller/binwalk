@@ -1,8 +1,0 @@
-{
-  "name": "Binwalk Windows Build",
-  "image": "mcr.microsoft.com/devcontainers/python:3.10",
-  "features": {
-    "ghcr.io/devcontainers/features/mingw-w64:1": {}
-  },
-  "postCreateCommand": "pip install --upgrade pip && pip install ."
-}
