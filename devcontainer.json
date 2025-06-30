@@ -1,8 +1,8 @@
 {
   "name": "Binwalk Windows Build",
-  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/mingw-w64:1": {}
   },
-  "postCreateCommand": "pip install --upgrade pip && pip install ."
+  "postCreateCommand": "rustup target add x86_64-pc-windows-gnu"
 }
