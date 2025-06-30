@@ -4,5 +4,8 @@
   "features": {
     "ghcr.io/devcontainers/features/mingw-w64:1": {}
   },
-  "postCreateCommand": "rustup target add x86_64-pc-windows-gnu"
+  "postCreateCommand": "rustup target add x86_64-pc-windows-gnu",
+  "remoteEnv": {
+    "PATH": "${containerEnv:HOME}/.cargo/bin:${containerEnv:PATH}"
+  }
 }
